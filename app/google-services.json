@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "115781484055",
+    "project_id": "grouptasksscreen",
+    "storage_bucket": "grouptasksscreen.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:115781484055:android:29871dc595d66eec7de652",
+        "android_client_info": {
+          "package_name": "it.polito.grouptasksscreen"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiKJivK6Q7QrQrF9eUiUFQuFi6XVZJV2w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

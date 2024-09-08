@@ -1,0 +1,906 @@
+{
+  "name": "team_card",
+  "version": 33,
+  "source-key": {
+    "type": "figma",
+    "file": "Zdj6s6uhAwlqPT8oXgS8au",
+    "node": "2724:396",
+    "version": "6060735455",
+    "component-id": "7ca9a3bd63799322b42b9447f683d912c6d00371"
+  },
+  "default": "Team Card",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "top_level_synth"
+      },
+      {
+        "type": "group",
+        "id": "Group 2204"
+      },
+      {
+        "type": "text",
+        "id": "name"
+      },
+      {
+        "type": "text",
+        "id": "Category"
+      },
+      {
+        "type": "text",
+        "id": "description"
+      },
+      {
+        "type": "group",
+        "id": "BottomBar"
+      },
+      {
+        "type": "group",
+        "id": "editButton"
+      },
+      {
+        "type": "group",
+        "id": "chatButton"
+      },
+      {
+        "type": "group",
+        "id": "kpiButton"
+      },
+      {
+        "type": "group",
+        "id": "Group 1"
+      },
+      {
+        "type": "group",
+        "id": "infoButton"
+      },
+      {
+        "type": "group",
+        "id": "BottomBar_synth"
+      },
+      {
+        "type": "vector",
+        "id": "editIcon"
+      },
+      {
+        "type": "vector",
+        "id": "chatIcon"
+      },
+      {
+        "type": "vector",
+        "id": "Vector 1"
+      },
+      {
+        "type": "vector",
+        "id": "Vector 2"
+      },
+      {
+        "type": "vector",
+        "id": "Vector 3"
+      },
+      {
+        "type": "group",
+        "id": "assignedUsers"
+      },
+      {
+        "type": "group",
+        "id": "User2"
+      },
+      {
+        "type": "group",
+        "id": "User1"
+      },
+      {
+        "type": "group",
+        "id": "Avatars"
+      },
+      {
+        "type": "group",
+        "id": "AvatarNumber"
+      },
+      {
+        "type": "text",
+        "id": "AvatarNumberText"
+      },
+      {
+        "type": "vector",
+        "id": "Vector"
+      }
+    ],
+    "modes": {
+      "Team Card": {
+        "rules": [
+          {
+            "id": "top_level",
+            "border-radius": 16.0,
+            "drop-shadow": {
+              "color": {
+                "alpha": 0.3176470588235294,
+                "hue": 204.0,
+                "saturation": 0.2777777777777778,
+                "value": 0.1411764705882353
+              },
+              "blur": 1.0,
+              "offset-x": 0.0,
+              "offset-y": 0.0,
+              "spread": 0.0,
+              "blend-mode": "normal"
+            },
+            "tap-handler": "$onClick",
+            "is-structured": false,
+            "children": [
+              "top_level_synth",
+              "Group 2204"
+            ],
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.019607843137254943,
+              "value": 1.0
+            }
+          },
+          {
+            "id": "top_level_synth",
+            "opacity": 100.0,
+            "padding": 16.0,
+            "border-radius": 16.0,
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "name",
+              "Category",
+              "description",
+              "BottomBar"
+            ],
+            "item-spacing": 12.0
+          },
+          {
+            "id": "Group 2204",
+            "border-radius": 200.0,
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 260.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 16.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 60.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 60.0
+              }
+            },
+            "is-structured": false,
+            "children": "$teamProfileIcon",
+            "clip-content": false
+          },
+          {
+            "id": "name",
+            "font-weight": 700.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 203.0769230769231,
+              "saturation": 0.26530612244897966,
+              "value": 0.19215686274509805
+            },
+            "text-content": "$nameText",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": 22.0,
+            "letter-spacing": -0.13200000524520875,
+            "line-height": 0.9090908813476563,
+            "typeface": "Inter"
+          },
+          {
+            "id": "Category",
+            "font-weight": 600.0,
+            "text-content": "$categoryText",
+            "italic": true,
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": 16.0,
+            "letter-spacing": -0.09600000381469727,
+            "line-height": 1.25,
+            "typeface": "Inter"
+          },
+          {
+            "id": "description",
+            "font-weight": 500.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 203.0769230769231,
+              "saturation": 0.26530612244897966,
+              "value": 0.19215686274509805
+            },
+            "text-content": "$descriptionText",
+            "italic": true,
+            "overflow": "visible",
+            "text-align": "left",
+            "letter-spacing": -0.0840000033378601,
+            "line-height": 1.4285714721679688,
+            "typeface": "Inter"
+          },
+          {
+            "id": "BottomBar",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 308.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 24.0
+              }
+            },
+            "is-structured": false,
+            "children": [
+              "editButton",
+              "chatButton",
+              "kpiButton",
+              "Group 1",
+              "infoButton",
+              "BottomBar_synth"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "editButton",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 32.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 6.0
+              }
+            },
+            "tap-handler": "$editButtonHandler",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 24.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 24.0
+              }
+            },
+            "is-structured": false,
+            "children": [
+              "editIcon"
+            ]
+          },
+          {
+            "id": "chatButton",
+            "border-radius": 200.0,
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 0.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 7.0
+              }
+            },
+            "tap-handler": "$chatButtonHandler",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 21.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 20.0
+              }
+            },
+            "is-structured": false,
+            "children": [
+              "chatIcon"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "kpiButton",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 67.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 3.0
+              }
+            },
+            "tap-handler": "$kpiButtonHandler",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "end",
+            "children": [
+              "Vector 1",
+              "Vector 2",
+              "Vector 3"
+            ],
+            "item-spacing": 3.0,
+            "clip-content": false
+          },
+          {
+            "id": "Group 1",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 221.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": -5.0
+              }
+            },
+            "tap-handler": "$memberButton",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 92.13999938964844
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 38.14285659790039
+              }
+            },
+            "is-structured": false,
+            "children": [
+              "assignedUsers",
+              "User2",
+              "User1"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "infoButton",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 101.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 4.0
+              }
+            },
+            "tap-handler": "$infoButtonHandler",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 24.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 24.0
+              }
+            },
+            "is-structured": false,
+            "children": [
+              "Vector"
+            ]
+          },
+          {
+            "id": "BottomBar_synth",
+            "opacity": 100.0,
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 308.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 24.0
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "clip-content": false
+          },
+          {
+            "id": "editIcon",
+            "margin": {
+              "left": 2.0,
+              "top": 1.82843017578125,
+              "right": 1.8284244537353516,
+              "bottom": 1.9999980926513672
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "edit_icon.svg"
+          },
+          {
+            "id": "chatIcon",
+            "margin": {
+              "top": 1.25,
+              "bottom": 0.0860748291015625
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "chat_icon.svg"
+          },
+          {
+            "id": "Vector 1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 5.25
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 18.0
+              }
+            },
+            "vector-content": "vector_1.svg"
+          },
+          {
+            "id": "Vector 2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 5.25
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 15.000000953674316
+              }
+            },
+            "vector-content": "vector_2.svg"
+          },
+          {
+            "id": "Vector 3",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 5.25
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 24.0
+              }
+            },
+            "vector-content": "vector_3.svg"
+          },
+          {
+            "id": "assignedUsers",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 54.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 0.0
+              }
+            },
+            "tap-handler": "$assignedUserButton",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Avatars"
+            ],
+            "item-spacing": 8.0,
+            "clip-content": false
+          },
+          {
+            "id": "User2",
+            "border-radius": 999.0,
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 24.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 0.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 38.14285659790039
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 38.14285659790039
+              }
+            },
+            "stroke-width": 1.0,
+            "stroke-alignment": "outside",
+            "stroke-color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 0.0
+            },
+            "is-structured": false,
+            "children": "$userTwoIcon",
+            "background-color": {
+              "alpha": 0.0,
+              "hue": 239.50413223140498,
+              "saturation": 0.5020746887966805,
+              "value": 0.9450980392156862
+            },
+            "fills": [
+              {
+                "color": {},
+                "opacity": 1.0,
+                "fill-type": "image",
+                "blend-mode": "normal",
+                "color-stops": [],
+                "gradient-handle-positions": []
+              }
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "User1",
+            "border-radius": 999.0,
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 38.14285659790039
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 38.14285659790039
+              }
+            },
+            "stroke-width": 1.0,
+            "stroke-alignment": "outside",
+            "stroke-color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 0.0
+            },
+            "is-structured": false,
+            "children": "$userOneIcon",
+            "fills": [
+              {
+                "color": {},
+                "opacity": 1.0,
+                "fill-type": "image",
+                "blend-mode": "normal",
+                "color-stops": [],
+                "gradient-handle-positions": []
+              }
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "Avatars",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "AvatarNumber"
+            ],
+            "item-spacing": -4.0,
+            "clip-content": false
+          },
+          {
+            "id": "AvatarNumber",
+            "border-radius": 200.0,
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 38.13999938964844
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 38.13999938964844
+              }
+            },
+            "stroke-width": 1.0,
+            "stroke-alignment": "outside",
+            "stroke-color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "is-structured": false,
+            "children": [
+              "AvatarNumberText"
+            ],
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 263.9999999999999,
+              "saturation": 0.039215686274509776,
+              "value": 1.0
+            },
+            "clip-content": false
+          },
+          {
+            "id": "AvatarNumberText",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": -0.06999969482421875
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": 0.9300003051757812
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 24.0
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": 500.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 258.46153846153845,
+              "saturation": 0.6018518518518519,
+              "value": 0.8470588235294118
+            },
+            "text-content": "$AvatarNumberText",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-size": 12.0,
+            "line-height": 1.5,
+            "typeface": "Inter"
+          },
+          {
+            "id": "Vector",
+            "margin": {
+              "left": 0.8571434020996094,
+              "top": 0.8571395874023438,
+              "right": 0.8571414947509766,
+              "bottom": 0.8571453094482422
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": -0.75
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": -0.75
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "vector.svg"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "teamProfileIcon": {
+      "data-type": "list-item",
+      "required": false,
+      "description": ""
+    },
+    "nameText": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "categoryText": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "descriptionText": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "editButtonHandler": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "chatButtonHandler": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "kpiButtonHandler": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "memberButton": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "infoButtonHandler": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "assignedUserButton": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "userTwoIcon": {
+      "data-type": "list-item",
+      "required": false,
+      "description": ""
+    },
+    "userOneIcon": {
+      "data-type": "list-item",
+      "required": false,
+      "description": ""
+    },
+    "AvatarNumberText": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "Team Card",
+      "size": {
+        "width": 340.0,
+        "height": 152.0
+      },
+      "parameters": {
+        "teamProfileIcon": [
+          {
+            "type": "image",
+            "border-radius": 200.0,
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 60.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 60.0
+              }
+            },
+            "stroke-width": 1.0,
+            "stroke-color": {
+              "alpha": 0.09803921568627451,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 0.0
+            },
+            "image-content": "team_profile.png",
+            "scale": "cover"
+          }
+        ],
+        "nameText": "Developers Team",
+        "categoryText": "Category",
+        "descriptionText": "Description",
+        "userOneIcon": [
+          {
+            "type": "image",
+            "border-radius": 9.5,
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 1.5229345838953918
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": -1.7142784755906746
+              }
+            },
+            "relative-transform": [
+              [
+                0.7986354231834412,
+                0.6018149256706238,
+                0.0
+              ],
+              [
+                -0.6018149256706238,
+                0.7986354231834412,
+                0.0
+              ]
+            ],
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 13.672430038452148
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 11.773014068603516
+              }
+            },
+            "image-content": "164_1645181_gold_crown_icon_royalty_free_cliparts_vectors_and_gold_crown_icon_png_senza_sfondo_1.png",
+            "scale": "cover"
+          }
+        ],
+        "AvatarNumberText": "+3"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

@@ -1,0 +1,691 @@
+{
+  "name": "task_card",
+  "version": 33,
+  "source-key": {
+    "type": "figma",
+    "file": "Zdj6s6uhAwlqPT8oXgS8au",
+    "node": "2762:396",
+    "version": "6060735455",
+    "component-id": "e7d65708941bd2e265876b11873d77294823f494"
+  },
+  "default": "TaskCard",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "name"
+      },
+      {
+        "type": "group",
+        "id": "editTask"
+      },
+      {
+        "type": "group",
+        "id": "recycle-bin-2--remove-delete-empty-bin-trash-garbage"
+      },
+      {
+        "type": "text",
+        "id": "ProgressLabel"
+      },
+      {
+        "type": "group",
+        "id": "Progressbar"
+      },
+      {
+        "type": "text",
+        "id": "DueDateLabel"
+      },
+      {
+        "type": "text",
+        "id": "dueDateText"
+      },
+      {
+        "type": "text",
+        "id": "description"
+      },
+      {
+        "type": "text",
+        "id": "assignedToLabel"
+      },
+      {
+        "type": "group",
+        "id": "assignedUsers"
+      },
+      {
+        "type": "group",
+        "id": "top_level_synth"
+      },
+      {
+        "type": "vector",
+        "id": "union-1"
+      },
+      {
+        "type": "vector",
+        "id": "Vector"
+      },
+      {
+        "type": "group",
+        "id": "Avatars"
+      },
+      {
+        "type": "group",
+        "id": "AvatarNumber"
+      },
+      {
+        "type": "text",
+        "id": "AvatarNumberText"
+      }
+    ],
+    "modes": {
+      "TaskCard": {
+        "rules": [
+          {
+            "id": "top_level",
+            "border-radius": 16.0,
+            "drop-shadow": {
+              "color": {
+                "alpha": 0.3176470588235294,
+                "hue": 204.0,
+                "saturation": 0.2777777777777778,
+                "value": 0.1411764705882353
+              },
+              "blur": 1.0,
+              "offset-x": 0.0,
+              "offset-y": 0.0,
+              "spread": 0.0,
+              "blend-mode": "normal"
+            },
+            "tap-handler": "$onClick",
+            "is-structured": false,
+            "children": [
+              "name",
+              "editTask",
+              "recycle-bin-2--remove-delete-empty-bin-trash-garbage",
+              "ProgressLabel",
+              "Progressbar",
+              "DueDateLabel",
+              "dueDateText",
+              "description",
+              "assignedToLabel",
+              "assignedUsers",
+              "top_level_synth"
+            ],
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.015748031496063047,
+              "value": 0.996078431372549
+            }
+          },
+          {
+            "id": "name",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 0.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 11.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 344.0
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": 700.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 220.79999999999998,
+              "saturation": 0.9259259259259258,
+              "value": 0.3176470588235294
+            },
+            "text-content": "$nameText",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-size": 22.0,
+            "letter-spacing": -0.13200000524520875,
+            "line-height": 0.9090908813476563,
+            "typeface": "Inter"
+          },
+          {
+            "id": "editTask",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 13.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 122.0
+              }
+            },
+            "tap-handler": "$editTaskHandler",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 24.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 24.0
+              }
+            },
+            "is-structured": false,
+            "children": [
+              "union-1"
+            ]
+          },
+          {
+            "id": "recycle-bin-2--remove-delete-empty-bin-trash-garbage",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 51.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 120.0
+              }
+            },
+            "tap-handler": "$deleteTaskHandler",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 24.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 24.0
+              }
+            },
+            "is-structured": false,
+            "children": [
+              "Vector"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "ProgressLabel",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 13.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 44.0
+              }
+            },
+            "font-weight": 500.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 220.79999999999998,
+              "saturation": 0.9259259259259258,
+              "value": 0.3176470588235294
+            },
+            "text-content": "Progress:",
+            "overflow": "visible",
+            "text-align": "left",
+            "line-height": 1.4285714721679688,
+            "typeface": "Inter"
+          },
+          {
+            "id": "Progressbar",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 88.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 31.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 113.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 47.0
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "children": "$progressBar",
+            "item-spacing": 12.0,
+            "clip-content": false
+          },
+          {
+            "id": "DueDateLabel",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 13.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 68.0
+              }
+            },
+            "font-weight": 500.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 220.79999999999998,
+              "saturation": 0.9259259259259258,
+              "value": 0.3176470588235294
+            },
+            "text-content": "Due Date:",
+            "overflow": "visible",
+            "text-align": "left",
+            "line-height": 1.4285714721679688,
+            "typeface": "Inter"
+          },
+          {
+            "id": "dueDateText",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 88.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 66.0
+              }
+            },
+            "font-weight": 500.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 239.50413223140498,
+              "saturation": 0.5020746887966805,
+              "value": 0.9450980392156862
+            },
+            "text-content": "$dueDateText",
+            "overflow": "visible",
+            "text-align": "left",
+            "letter-spacing": -0.0840000033378601,
+            "line-height": 1.7142857360839843,
+            "typeface": "Inter"
+          },
+          {
+            "id": "description",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 13.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 91.0
+              }
+            },
+            "font-weight": 500.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 220.79999999999998,
+              "saturation": 0.9259259259259258,
+              "value": 0.3176470588235294
+            },
+            "text-content": "$descriptionText",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": 12.0,
+            "line-height": 1.6666667175292968,
+            "typeface": "Inter"
+          },
+          {
+            "id": "assignedToLabel",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 202.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 126.0
+              }
+            },
+            "font-weight": 500.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 238.92857142857142,
+              "saturation": 0.23829787234042554,
+              "value": 0.9215686274509803
+            },
+            "text-content": "Assigned to:",
+            "overflow": "visible",
+            "text-align": "left",
+            "line-height": 1.2857142639160157,
+            "typeface": "Inter"
+          },
+          {
+            "id": "assignedUsers",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 292.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 114.0
+              }
+            },
+            "tap-handler": "$assignedUserButton",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Avatars"
+            ],
+            "item-spacing": 8.0,
+            "clip-content": false
+          },
+          {
+            "id": "top_level_synth",
+            "opacity": 100.0,
+            "padding": 16.0,
+            "border-radius": 16.0,
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink",
+                "min": 344.0
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink",
+                "min": 158.0
+              }
+            },
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "item-spacing": 12.0
+          },
+          {
+            "id": "union-1",
+            "margin": {
+              "left": 2.0,
+              "top": 1.82843017578125,
+              "right": 1.8284244537353516,
+              "bottom": 1.9999980926513672
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "union_1.svg"
+          },
+          {
+            "id": "Vector",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": -0.649993896484375
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": -0.649993896484375
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "vector.svg"
+          },
+          {
+            "id": "Avatars",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "AvatarNumber"
+            ],
+            "item-spacing": -4.0,
+            "clip-content": false
+          },
+          {
+            "id": "AvatarNumber",
+            "border-radius": 200.0,
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 38.13999938964844
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 38.13999938964844
+              }
+            },
+            "stroke-width": 1.0,
+            "stroke-alignment": "outside",
+            "stroke-color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "is-structured": false,
+            "children": [
+              "AvatarNumberText"
+            ],
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 263.9999999999999,
+              "saturation": 0.039215686274509776,
+              "value": 1.0
+            },
+            "clip-content": false
+          },
+          {
+            "id": "AvatarNumberText",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": -0.06999969482421875
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": 0.9300003051757812
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 24.0
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": 500.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 258.46153846153845,
+              "saturation": 0.6018518518518519,
+              "value": 0.8470588235294118
+            },
+            "text-content": "$AvatarNumberText",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-size": 12.0,
+            "line-height": 1.5,
+            "typeface": "Inter"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "nameText": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "editTaskHandler": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "deleteTaskHandler": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "progressBar": {
+      "data-type": "list-item",
+      "required": false,
+      "description": ""
+    },
+    "dueDateText": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "descriptionText": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "assignedUserButton": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "AvatarNumberText": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "TaskCard",
+      "size": {
+        "width": 344.0,
+        "height": 158.0
+      },
+      "parameters": {
+        "nameText": "Task 1",
+        "progressBar": [
+          {
+            "type": "group",
+            "border-radius": 8.0,
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 8.0
+              }
+            },
+            "is-structured": false,
+            "children": [
+              {
+                "type": "vector",
+                "border-radius": 4.0,
+                "size-constraints": {
+                  "width-constraints": {
+                    "sizing-mode": "proportional",
+                    "value": 1.0
+                  },
+                  "height-constraints": {
+                    "sizing-mode": "fixed",
+                    "value": 8.0
+                  }
+                },
+                "vector-content": "background.svg"
+              },
+              {
+                "type": "vector",
+                "margin": {
+                  "right": 21.233455657958984
+                },
+                "border-radius": 4.0,
+                "size-constraints": {
+                  "width-constraints": {
+                    "sizing-mode": "proportional",
+                    "value": 1.0
+                  },
+                  "height-constraints": {
+                    "sizing-mode": "fixed",
+                    "value": 8.0
+                  }
+                },
+                "vector-content": "progress.svg"
+              }
+            ],
+            "clip-content": false
+          },
+          {
+            "type": "text",
+            "font-weight": 500.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 238.92857142857142,
+              "saturation": 0.23829787234042554,
+              "value": 0.9215686274509803
+            },
+            "text-content": "70%",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "line-height": 1.4285714721679688,
+            "typeface": "Inter"
+          }
+        ],
+        "dueDateText": "Dec 30,  2024",
+        "descriptionText": "Create a Comment Section that works",
+        "AvatarNumberText": "+3"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
